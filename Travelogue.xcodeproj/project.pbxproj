@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		41DB655E2273C94100825F83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DB655D2273C94100825F83 /* AppDelegate.swift */; };
-		41DB65602273C94100825F83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DB655F2273C94100825F83 /* ViewController.swift */; };
 		41DB65632273C94100825F83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41DB65612273C94100825F83 /* Main.storyboard */; };
 		41DB65662273C94100825F83 /* Travelogue.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41DB65642273C94100825F83 /* Travelogue.xcdatamodeld */; };
 		41DB65682273C94100825F83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41DB65672273C94100825F83 /* Assets.xcassets */; };
 		41DB656B2273C94100825F83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41DB65692273C94100825F83 /* LaunchScreen.storyboard */; };
+		EBED29622273EE6B00E9718E /* EntryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED29612273EE6B00E9718E /* EntryTableViewController.swift */; };
+		EBED29642273EE7E00E9718E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED29632273EE7E00E9718E /* DetailViewController.swift */; };
+		EBED29662273EEAF00E9718E /* TripsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED29652273EEAF00E9718E /* TripsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		41DB655A2273C94100825F83 /* Travelogue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Travelogue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41DB655D2273C94100825F83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		41DB655F2273C94100825F83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		41DB65622273C94100825F83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41DB65652273C94100825F83 /* Travelogue.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Travelogue.xcdatamodel; sourceTree = "<group>"; };
 		41DB65672273C94100825F83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41DB656A2273C94100825F83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41DB656C2273C94100825F83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBED29612273EE6B00E9718E /* EntryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTableViewController.swift; sourceTree = "<group>"; };
+		EBED29632273EE7E00E9718E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		EBED29652273EEAF00E9718E /* TripsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				41DB655D2273C94100825F83 /* AppDelegate.swift */,
-				41DB655F2273C94100825F83 /* ViewController.swift */,
 				41DB65612273C94100825F83 /* Main.storyboard */,
+				EBED29612273EE6B00E9718E /* EntryTableViewController.swift */,
+				EBED29652273EEAF00E9718E /* TripsTableViewController.swift */,
+				EBED29632273EE7E00E9718E /* DetailViewController.swift */,
 				41DB65672273C94100825F83 /* Assets.xcassets */,
 				41DB65692273C94100825F83 /* LaunchScreen.storyboard */,
 				41DB656C2273C94100825F83 /* Info.plist */,
@@ -99,6 +105,7 @@
 				TargetAttributes = {
 					41DB65592273C94100825F83 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -138,8 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41DB65602273C94100825F83 /* ViewController.swift in Sources */,
 				41DB655E2273C94100825F83 /* AppDelegate.swift in Sources */,
+				EBED29642273EE7E00E9718E /* DetailViewController.swift in Sources */,
+				EBED29662273EEAF00E9718E /* TripsTableViewController.swift in Sources */,
+				EBED29622273EE6B00E9718E /* EntryTableViewController.swift in Sources */,
 				41DB65662273C94100825F83 /* Travelogue.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +303,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = WV.Travelogue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -311,7 +320,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = WV.Travelogue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
